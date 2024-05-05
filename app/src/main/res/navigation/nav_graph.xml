@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashsreen">
+
+    <fragment
+        android:id="@+id/splashsreen"
+        android:name="com.example.lsproject.Package.Splashsreen"
+        android:label="fragment_blank_splashsreen"
+        tools:layout="@layout/fragment_blank_splashsreen" >
+        <action
+            android:id="@+id/action_splashsreen_to_homescreen"
+            app:destination="@id/homescreen" />
+        <action
+            android:id="@+id/action_splashsreen_to_homescreen2"
+            app:destination="@id/homescreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homescreen"
+        android:name="com.example.lsproject.Package.Homescreen"
+        android:label="fragment_blank_homesreen"
+        tools:layout="@layout/fragment_blank_homesreen" >
+        <action
+            android:id="@+id/action_homescreen_to_morning1pm"
+            app:destination="@id/morning1pm" />
+        <action
+            android:id="@+id/action_homescreen_to_oldResult"
+            app:destination="@id/oldResult" />
+        <action
+            android:id="@+id/action_homescreen_self"
+            app:destination="@id/homescreen" />
+        <action
+            android:id="@+id/action_homescreen_to_numberanalysis"
+            app:destination="@id/numberanalysis" />
+        <action
+            android:id="@+id/action_homescreen_to_barchart"
+            app:destination="@id/barchart" />
+        <action
+            android:id="@+id/action_homescreen_to_oldResult2"
+            app:destination="@id/oldResult" />
+        <action
+            android:id="@+id/action_homescreen_to_oldResult3"
+            app:destination="@id/oldResult" />
+        <action
+            android:id="@+id/action_homescreen_to_morningDayNightold"
+            app:destination="@id/morningDayNightold" />
+        <action
+            android:id="@+id/action_homescreen_to_barchart2"
+            app:destination="@id/barchart" />
+        <action
+            android:id="@+id/action_homescreen_to_barChartFragment"
+            app:destination="@id/barChartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/morning1pm"
+        android:name="com.example.lsproject.Package.Morning1pm"
+        android:label="fragment_morning1pm"
+        tools:layout="@layout/fragment_morning1pm" />
+    <fragment
+        android:id="@+id/numberanalysis"
+        android:name="com.example.lsproject.Package.Numberanalysis"
+        android:label="fragment_numberanalysis"
+        tools:layout="@layout/fragment_numberanalysis" />
+    <fragment
+        android:id="@+id/oldResult"
+        android:name="com.example.lsproject.Package.OldResult"
+        android:label="fragment_old_result"
+        tools:layout="@layout/fragment_old_result" />
+    <fragment
+        android:id="@+id/barchart"
+        android:name="com.example.lsproject.Package.Barchart"
+        android:label="fragment_barchart"
+        tools:layout="@layout/fragment_barchart" />
+    <fragment
+        android:id="@+id/morningDayNightold"
+        android:name="com.example.lsproject.Package.MorningDayNightold"
+        android:label="fragment_morning_day_night"
+        tools:layout="@layout/fragment_morning_day_night" />
+    <fragment
+        android:id="@+id/barChartFragment"
+        android:name="com.example.lsproject.Package.BarChartFragment"
+        android:label="BarChartFragment" />
+</navigation>

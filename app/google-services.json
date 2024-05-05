@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "531541997208",
+    "project_id": "lsproject-6a06d",
+    "storage_bucket": "lsproject-6a06d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531541997208:android:12227a9672515194eb42ed",
+        "android_client_info": {
+          "package_name": "com.example.lsproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrdjDWwlbsE1Qd_0csyezLgl-qGJqbjc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
