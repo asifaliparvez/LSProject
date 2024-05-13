@@ -38,12 +38,6 @@
             android:id="@+id/action_homescreen_to_barchart"
             app:destination="@id/barchart" />
         <action
-            android:id="@+id/action_homescreen_to_oldResult2"
-            app:destination="@id/oldResult" />
-        <action
-            android:id="@+id/action_homescreen_to_oldResult3"
-            app:destination="@id/oldResult" />
-        <action
             android:id="@+id/action_homescreen_to_morningDayNightold"
             app:destination="@id/morningDayNightold" />
         <action

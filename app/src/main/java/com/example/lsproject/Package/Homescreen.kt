@@ -35,15 +35,8 @@ class Homescreen : Fragment() {
         binding.morning1pm.setOnClickListener {
             navcontroll.navigate(R.id.action_homescreen_to_morning1pm)
         }
-            binding.Nanalysis.setOnClickListener {
-                navcontroll.navigate(R.id.action_homescreen_to_numberanalysis)
-            }
-                binding.Oldresult.setOnClickListener {
-                    navcontroll.navigate(R.id.action_homescreen_to_morningDayNightold)
-                }
-                    binding.barchart.setOnClickListener {
-                        navcontroll.navigate(R.id.action_homescreen_to_barChartFragment)
-
+        binding.Oldresult.setOnClickListener {
+            navcontroll.navigate(R.id.action_homescreen_to_oldResult)
         }
     }
 
