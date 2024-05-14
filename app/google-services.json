@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "226928427653",
-    "project_id": "hellothere-9b595",
-    "storage_bucket": "hellothere-9b595.appspot.com"
+    "project_number": "980438064871",
+    "project_id": "lsproject-44653",
+    "storage_bucket": "lsproject-44653.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:226928427653:android:553fcdd4e817a8fd435fec",
+        "mobilesdk_app_id": "1:980438064871:android:3bcefc3855957260b3cc42",
         "android_client_info": {
           "package_name": "com.example.lsproject"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCedZzNeK0N03K_jaZQAroFMI3Id7ORSB4"
+          "current_key": "AIzaSyCizB-7m3X4XILLjMer6TbCp1UMxYAzYUE"
         }
       ],
       "services": {

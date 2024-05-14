@@ -11,6 +11,7 @@ class Adapter(
     options: FirebaseRecyclerOptions<ResultModel>,
     ):FirebaseRecyclerAdapter<ResultModel, Adapter.MyViewHolder>(options){
 
+//Hello
     inner class  MyViewHolder( val binding:ItemLayoutBinding): RecyclerView.ViewHolder(binding.root){
         fun setDate(date:String){
             binding.textView.text = date
