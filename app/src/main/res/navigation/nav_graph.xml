@@ -61,7 +61,11 @@
         android:id="@+id/oldResult"
         android:name="com.example.lsproject.Package.OldResult"
         android:label="fragment_old_result"
-        tools:layout="@layout/fragment_old_result" />
+        tools:layout="@layout/fragment_old_result" >
+        <action
+            android:id="@+id/action_oldResult_to_resultDetailFragment"
+            app:destination="@id/resultDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/barchart"
         android:name="com.example.lsproject.Package.Barchart"
@@ -76,4 +80,18 @@
         android:id="@+id/barChartFragment"
         android:name="com.example.lsproject.Package.BarChartFragment"
         android:label="BarChartFragment" />
+    <fragment
+        android:id="@+id/resultDetailFragment"
+        android:name="com.example.lsproject.Package.ResultDetailFragment"
+        android:label="fragment_result_detail"
+        tools:layout="@layout/fragment_result_detail" >
+        <action
+            android:id="@+id/action_resultDetailFragment_to_morningResultFragment"
+            app:destination="@id/morningResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/morningResultFragment"
+        android:name="com.example.lsproject.Package.MorningResultFragment"
+        android:label="fragment_morning_result"
+        tools:layout="@layout/fragment_morning_result" />
 </navigation>

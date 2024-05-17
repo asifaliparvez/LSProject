@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.lsproject.databinding.FragmentOldResultBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -28,21 +29,26 @@ class OldResult : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentOldResultBinding.inflate(inflater, container, false)
+
+        /*
         // Inflate the layout for this fragment
         val dateFormat: DateFormat = SimpleDateFormat("dd/MM/yyyy ")
 
-            val date = Date()
-            val strDate: String = dateFormat.format(date).toString()
-            val ref = dataBase.root.child("results")
-            ref.push().setValue(ResultModel(strDate, "morning","evening","night")).addOnCompleteListener {
-                if (it.isSuccessful){
-                }else{
-                    Log.d(TAG, it.exception.toString())
-                }
+        val date = Date()
+        val strDate: String = dateFormat.format(date).toString()
+        val ref = dataBase.root.child("results")
+        ref.push().setValue(ResultModel(strDate, "morning","evening","night")).addOnCompleteListener {
+            if (it.isSuccessful){
+            }else{
+                Log.d(TAG, it.exception.toString())
             }
-                .addOnFailureListener {
-                    Log.d(TAG, it.message.toString())
-                }
+        }
+            .addOnFailureListener {
+                Log.d(TAG, it.message.toString())
+            }
+
+         */
+
 
 
         setUpRecyclerView()
@@ -59,16 +65,19 @@ class OldResult : Fragment() {
     private fun setUpRecyclerView(){
 
         val query =
-            FirebaseDatabase.getInstance().reference.child("results")
+            FirebaseDatabase.getInstance().reference.child("oldresult")
 
         val options = FirebaseRecyclerOptions.Builder<ResultModel>()
             .setLifecycleOwner(this)
             .setQuery(query, ResultModel::class.java)
 
             .build()
-        adapter = Adapter(options)
+        adapter = Adapter(navController = findNavController(),options)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         binding.recyclerView.adapter = this.adapter
+
+        binding.recyclerView.visibility = View.VISIBLE
+        binding.textViewLoading.visibility = View.GONE
 
     }
 

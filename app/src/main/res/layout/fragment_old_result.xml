@@ -8,8 +8,17 @@
     <!-- TODO: Update blank fragment layout -->
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
+        android:visibility="invisible"
         android:id="@+id/recyclerView"
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/textViewLoading"
+        android:text="Result loading please wait!!"
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>
