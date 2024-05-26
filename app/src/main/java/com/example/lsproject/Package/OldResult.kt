@@ -64,8 +64,7 @@ class OldResult : Fragment() {
 
     private fun setUpRecyclerView(){
 
-        val query =
-            FirebaseDatabase.getInstance().reference.child("oldresult")
+        val query = FirebaseDatabase.getInstance().reference.child("oldresult")
 
         val options = FirebaseRecyclerOptions.Builder<ResultModel>()
             .setLifecycleOwner(this)

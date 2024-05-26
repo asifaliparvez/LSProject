@@ -20,7 +20,7 @@ class MorningResultFragment : Fragment() {
     ): View? {
         val morning = requireArguments().getString("morning")
         Toast.makeText(requireContext(), morning, Toast.LENGTH_SHORT).show()
-        binding = FragmentMorningResultBinding.inflate(layoutInflater, container, false)
+        binding = FragmentMorningResultBinding.inflate(inflater, container, false)
         Glide.with(requireContext()).load(morning).into(binding.imageView)
 
         return inflater.inflate(R.layout.fragment_morning_result, container, false)
